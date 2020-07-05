@@ -225,7 +225,7 @@ int createSocket ( socketParameterPtr sock )
     bzero ( &(sock->serverAddress), sizeof ( sock->serverAddress ) );
     ( &(sock->serverAddress) )->sin_family = AF_INET;
     ( &(sock->serverAddress) )->sin_port = 2152;
-    ( &(sock->serverAddress) )->sin_addr.s_addr = inet_addr ( "192.168.126.134" );
+    ( &(sock->serverAddress) )->sin_addr.s_addr = inet_addr ( "192.168.xx.yy" );
     return SUCCESS;
 }
 
